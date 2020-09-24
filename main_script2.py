@@ -21,8 +21,6 @@ def fun():
         f =  os.path.getmtime(NewOpen)
         local_time = datetime.fromtimestamp(f)
         var2 = g - timedelta(1)
-        print('24 hoursago')
-        print( var2)
         
         if (var2 - local_time) < timedelta(1):
             shutil.move(NewOpen,destination)
